@@ -1,5 +1,5 @@
 import math
-
+import statistics
 class Operations:
     def __init__(self, value1):
         self.value1 = value1
@@ -35,3 +35,6 @@ class Operations:
 
     def avg(self):
         return(sum(self.value1)/len(self.value1))
+
+    def stdevpa(self):
+        return round(statistics.pstdev(self.value1),2)
